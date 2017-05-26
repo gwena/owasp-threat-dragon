@@ -14,7 +14,7 @@ We are currently maintaining [a working protoype](https://threatdragon.org/) in 
 
 **Project leader:** Mike Goodwin (mike.goodwin@owasp.org)
 
-##Installing
+## Installing
 
 ThreatDragon is a Single Page Application (SPA) using Angular on the client and node.js on the server. To build and run locally, follow these steps:
 
@@ -28,7 +28,7 @@ This installs code in two sub-folders. One for the main application (`td`) and o
 
 `npm install`
 
-##Environment variables
+## Environment variables
 
 Threat Dragon uses GitHub to store threat models, so you need to go to your GitHub account and [register it as a GitHub application](https://github.com/settings/applications/new). Once you have done that you need to set the Client ID and Client Secret as environment variables (`GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`).
 
@@ -46,7 +46,7 @@ If you want to use an [alternative session store](https://github.com/expressjs/s
 
 Lastly, by default, Threat Dragon will set the `secure` flag on cookies. To override this for development purposes, set the `NODE_ENV` environment variable to `development`. 
 
-##Running the application
+## Running the application
 
 Once your environment variables are set up, start the node web server:
 
@@ -54,7 +54,7 @@ Once your environment variables are set up, start the node web server:
 
 If you then browse to `http://localhost:3000` you should see the running application.
 
-##Debug builds
+## Debug builds
 
 All Threat Dragon build tasks are done using `npm`. The basic one is:
 
@@ -62,7 +62,7 @@ All Threat Dragon build tasks are done using `npm`. The basic one is:
 
 See `package.json` for a other build tasks.
 
-##Running the unit tests
+## Running the unit tests
 
 The unit tests are written using Jasmine and Karma. Coverage is by Istanbul. A few different npm tasks are available:
 
@@ -75,12 +75,10 @@ The unit tests are written using Jasmine and Karma. Coverage is by Istanbul. A f
 
 **Note:** If you are on Windows and are having problems installing Karma, the simplest way to resolve this seems to be to install Python v2.7.x (not v3+) and then install Visual Studio Express as per the SO answer suggested in [this link](http://codedmi.com/questions/298619/npm-install-g-karma-error-msb4019-the-imported-project-c-microsoft-cpp-defau). This sounds mad, but the alternative is a world of pain installing various patches and components one by one. At least it's free :o/
 
-###Unit test coverage progress
+### Unit test coverage progress
 
 We aim to maintain unit test coverage at > 90%
 
 ![codecov.io](https://codecov.io/github/mike-goodwin/owasp-threat-dragon/branch.svg?branch=master)
 
 Also, the code is currently lint free :)
-
-
